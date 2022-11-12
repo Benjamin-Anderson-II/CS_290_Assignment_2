@@ -1,0 +1,175 @@
+/*
+ * You should write your CSS in this file.  Don't forget to add your name and
+ * @oregonstate.edu email address below.
+ *
+ * name:  Benjamin Anderson II
+ * email: anderbe2@oregonstate.edu
+ */
+body{
+    margin:0;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a{
+    color: tomato;
+}
+
+/*Header*/
+header{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    background-color: black;
+}
+.header-image-container{
+    min-height: 130px;
+    min-width: 130px;
+    height: 130px;
+    width: 130px;
+}
+.site-title{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Roboto Slab, sans-serif;
+    font-size: 70px;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 10px;
+    margin: 0px;
+    font-weight: 500;
+}
+.site-title a{
+    min-width: 500px;
+    flex-wrap: nowrap;
+}
+.site-title a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.site-title a:visited{
+    color: white;
+}
+
+/*Content Body*/
+.content{
+    display: flex;
+    font-family: Roboto, sans-serif;
+}
+
+/*Side Filter Bar*/
+#filter-min-price, #filter-max-price{
+    border-radius: 3px;
+    border: 1px solid #d5d5d5;
+    width: 66px;
+}
+.filter-container{
+    border-radius: 4px;
+    background-color: #edeced;
+    padding: 20px;
+    width: 200px;
+    height: 340px;
+    margin: 8px;
+}
+.filter-container h2{
+    margin: 0px;
+}
+.filter-input-element{
+    display: inline-block;
+    margin: 5px;
+    margin-right: 0px;
+}
+#filter-text.filter-input{
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    width: 153px;
+}
+#filter-city.filter-input{
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    width: 162px;
+}
+#filter-update-button{
+    width: 200px;
+    height: 40px;
+    padding: 4px;
+    border: 1px solid #a1a1a1;
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+}
+#filter-update-button:hover{
+    background-color: #f3d0b5;
+    border-color: black;
+    color:black;
+    cursor:pointer;
+}
+
+/*Sale Posts*/
+#posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.post{
+    display: block;
+    border: 1px solid #a1a1a1;
+    border-radius: 4px;
+    padding: 8px;
+    width: 300px;
+    height: 300px;
+    margin: 8px;
+}
+.post-image-container img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+.post-info-container{
+    margin-top: 20px;
+}
+.post-price{
+    background-color: #edeced;
+    border: 1px solid #a1a1a1;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 75%;
+}
+
+/*Floating Button to add you're own item*/
+#sell-something-button{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #e37115;
+    color: white;
+    width: 50px;
+    height: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
+    border: 0px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+}
+#sell-something-button:hover{
+    width: 54px;
+    height: 54px;
+    bottom: 24px;
+    right: 24px;
+    font-size: 32px;
+    cursor: pointer;
+}
